@@ -2,8 +2,8 @@
 
 clc
 clear all
-% workPath=[getenv('UserProfile'), '\Desktop'];
-workPath=['/Users/apple/Downloads/Sprof Environment'];
+% input the location of Sprof-Environment
+workPath=['/Users/apple/Downloads/Sprof-Environment-main'];
 addpath([workPath,'/list']);
 cd(workPath);
 setup_nctoolbox
