@@ -3,7 +3,7 @@
 clc
 clear all
 % input the location of Sprof-Environment
-workPath=['/Users/apple/Downloads/Sprof-Environment-main'];
+workPath=['/Users/apple/Downloads/Sprof-Environment-main'];%if windows, you can use / or \ 
 addpath([workPath,'/list']);
 cd(workPath);
 setup_nctoolbox
