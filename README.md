@@ -3,7 +3,7 @@ convert Sprof.nc file to txt file and plot each cycle of chosen biogeochemical p
 
 1. the nctoolbox (run setup_nctoolbox.m) MUST be installed before running these m file.
 
-   if setup_nctoolbox displayed 'failed to setup the JAVA classpath', then go to ...\nctoolbox-master\java\setup_nctoolbox_java.m file
+   if setup_nctoolbox display 'failed to setup the JAVA classpath' error, go to ...\nctoolbox-master\java\setup_nctoolbox_java.m file
    and disable (comment) the line:
    
 root.addAppender(org.apache.log4j.ConsoleAppender(org.apache.log4j.PatternLayout('%d{ISO8601} [%t] %-5p %c %x - %m%n')));
