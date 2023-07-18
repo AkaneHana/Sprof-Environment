@@ -7,13 +7,14 @@ clear all
 % addpath([workPath,'/list']);
 
 workPath=[getenv('UserProfile'),'\Desktop\'];%if windows
-addpath([workPath,'trainings\Sprof-Environment-main\list']);
+addpath([workPath,'trainings\Sprof-Environment-main\list']);%add path where you save the Sprof-Environment-main folder
 addpath([workPath,'trainings\Sprof-Environment-main']);
-addpath([workPath,'trainings\nctoolbox-master']);
+addpath([workPath,'trainings\nctoolbox-master']);%add path where you saved the nctoolbox-master folder
 
 
 cd(workPath);
-setup_nctoolbox
+setup_nctoolbox%run this step if nctoolbox has not been installed
+
 [filename, pathname, ~] = uigetfile('_Sprof.nc');%obtain the .Sprof file by selecting files in the file selection dialog
 fileslist = dir(pathname);isub = [fileslist(:).isdir];
 nameFolds = {fileslist(:).name}';nameFolds(ismember(nameFolds,{'.','..','.DS_Store'})) = [];
