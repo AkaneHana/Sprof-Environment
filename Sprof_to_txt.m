@@ -3,8 +3,15 @@
 clc
 clear all
 % input the location of Sprof-Environment
-workPath=['/Users/apple/Downloads/Sprof-Environment-main'];%if windows, you can use / or \ 
-addpath([workPath,'/list']);
+% workPath=['/Users/apple/Downloads/Sprof-Environment-main'];%if MAC
+% addpath([workPath,'/list']);
+
+workPath=[getenv('UserProfile'),'\Desktop\'];%if windows
+addpath([workPath,'trainings\Sprof-Environment-main\list']);
+addpath([workPath,'trainings\Sprof-Environment-main']);
+addpath([workPath,'trainings\nctoolbox-master']);
+
+
 cd(workPath);
 setup_nctoolbox
 [filename, pathname, ~] = uigetfile('_Sprof.nc');%obtain the .Sprof file by selecting files in the file selection dialog
