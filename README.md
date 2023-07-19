@@ -1,5 +1,5 @@
 # Sprof-Environment
-convert Sprof.nc file to txt file and plot each cycle of chosen biogeochemical parameters
+convert Sprof.nc file to .txt file and plot each cycle of these chosen biogeochemical parameters
 
 1. the nctoolbox (run setup_nctoolbox.m) can either be installed before running these m file, or run the line 'setup_nctoolbox' in Sprof_to_txt.m file.
 
