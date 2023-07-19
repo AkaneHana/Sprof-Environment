@@ -1,7 +1,7 @@
 # Sprof-Environment
 convert Sprof.nc file to txt file and plot each cycle of chosen biogeochemical parameters
 
-1. the nctoolbox (run setup_nctoolbox.m) MUST be installed before running these m file.
+1. the nctoolbox (run setup_nctoolbox.m) can either be installed before running these m file, or run the line 'setup_nctoolbox' in Sprof_to_txt.m file.
 
    if setup_nctoolbox display 'failed to setup the JAVA classpath' error, go to ...\nctoolbox-master\java\setup_nctoolbox_java.m file
    and disable (comment) the line:
